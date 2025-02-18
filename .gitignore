@@ -44,3 +44,6 @@ poetry.lock
 
 # Ruff
 .ruff_cache
+
+# Misc
+docs/data/
