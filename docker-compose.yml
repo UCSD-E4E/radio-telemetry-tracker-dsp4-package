@@ -1,0 +1,7 @@
+services:
+  rtt-dsp4-p-dev:
+    build: .
+    volumes:
+      - .:/workspace/radio-telemetry-tracker-dsp4-package
+    privileged: true
+    command: /bin/sh -c "while sleep 10000; do :; done"

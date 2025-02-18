@@ -1,0 +1,30 @@
+{
+    "name": "Radio Telemetry Tracker DSP4 Package Development",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "rtt-dsp4-p-dev",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "charliermarsh.ruff",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "xaver.clang-format"
+            ],
+            "settings": {
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit",
+                        "source.organizeImports": "explicit"
+                    }
+                },
+                "[cpp]": {
+                    "editor.formatOnSave": true
+                },
+                "clang-tidy.checks": ["*"],
+                "clang-format.style": "file"
+            }
+        }
+    }
+}
