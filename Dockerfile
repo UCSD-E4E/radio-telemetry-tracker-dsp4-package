@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 RUN uhd_images_downloader
 
 # Set working directory back to the project
-WORKDIR /workspace/radio-telemetry-tracker-drone-fds
+WORKDIR /workspace/radio-telemetry-tracker-dsp4-package
 
 # Install Poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -

@@ -4,6 +4,7 @@
         "../docker-compose.yml"
     ],
     "service": "rtt-dsp4-p-dev",
+    "workspaceFolder": "/workspace/radio-telemetry-tracker-dsp4-package",
     "customizations": {
         "vscode": {
             "extensions": [
